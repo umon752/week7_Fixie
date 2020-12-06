@@ -1,9 +1,10 @@
 @mixin text-hidden {
-    background-size: contain;
+    // background-size: contain;
     overflow: hidden;
     text-indent: 101%;
     background-repeat: no-repeat;
     background-position: center;
+    white-space: nowrap;
 }
 
 @mixin bg-cover($position) {

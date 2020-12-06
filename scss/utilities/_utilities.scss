@@ -222,22 +222,3 @@
     @include theme-colors(-xl);
     @include h1-h6(-xl);
 }
-
-
-// js動態增加的效果
-.bg-position-left {
-    position: relative;
-    background-position: left;
-    transition: all 1s ease;
-}
-
-.bg-position-right {
-    position: relative;
-    background-position: right;
-    transition: all 1s ease;
-}
-
-.translate-left {
-    transform: translateX(-110px);
-    transition: all 1s ease;
-}

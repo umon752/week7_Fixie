@@ -5982,28 +5982,6 @@ a.text-dark:hover, a.text-dark:focus {
   .h6-xl {
     font-size: 1rem !important; } }
 
-.bg-position-left {
-  position: relative;
-  background-position: left;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
-
-.bg-position-right {
-  position: relative;
-  background-position: right;
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
-
-.translate-left {
-  -webkit-transform: translateX(-110px);
-  -ms-transform: translateX(-110px);
-  transform: translateX(-110px);
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
-
 /* 全站設定 */
 img {
   display: block;
@@ -6025,11 +6003,11 @@ ul {
   width: 112px;
   height: 48px;
   background-image: url("../images/logo-fixie.svg");
-  background-size: contain;
   overflow: hidden;
   text-indent: 101%;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  white-space: nowrap; }
 
 .collection__text {
   position: absolute;
