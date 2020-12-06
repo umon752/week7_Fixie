@@ -6024,7 +6024,7 @@ ul {
 .logo {
   width: 112px;
   height: 48px;
-  background-image: url("../../images/logo-fixie.svg");
+  background-image: url("../images/logo-fixie.svg");
   background-size: contain;
   overflow: hidden;
   text-indent: 101%;
