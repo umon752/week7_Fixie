@@ -112,21 +112,24 @@
     @include md {
         margin: 96px auto;
     }
+}
 
-    &__banner {
-        position: relative;
-        height: 400px;
-        width: 100%;
-        background-image: url("../images/img4.jpg");
-        @include bg-cover(top);
-        background-attachment: fixed;
 
-        @include md {
-            height: 640px;
-        }
+
+// recommend
+.recommend__banner {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/img4.jpg");
+    @include bg-cover(top);
+    background-attachment: fixed;
+
+    @include md {
+        height: 640px;
     }
 
-    &__banner__text {
+    &__text {
         position: absolute;
         left: 0;
         bottom: 30px;

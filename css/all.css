@@ -6124,28 +6124,29 @@ ul {
   @media (min-width: 768px) {
     .commuters {
       margin: 96px auto; } }
-  .commuters__banner {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    background-image: url("../images/img4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed; }
-    @media (min-width: 768px) {
-      .commuters__banner {
-        height: 640px; } }
-  .commuters__banner__text {
+
+.recommend__banner {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-image: url("../images/img4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed; }
+  @media (min-width: 768px) {
+    .recommend__banner {
+      height: 640px; } }
+  .recommend__banner__text {
     position: absolute;
     left: 0;
     bottom: 30px; }
     @media (min-width: 768px) {
-      .commuters__banner__text {
+      .recommend__banner__text {
         left: 50px;
         bottom: 50px; } }
     @media (min-width: 992px) {
-      .commuters__banner__text {
+      .recommend__banner__text {
         left: 255px;
         bottom: 77px; } }
 
