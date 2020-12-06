@@ -6043,7 +6043,7 @@ ul {
 
 .collection__img {
   height: 400px;
-  background-image: url("../../images/img1.jpg");
+  background-image: url("../images/img1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6077,7 +6077,7 @@ ul {
 .onegear__img {
   height: 400px;
   width: 100%;
-  background-image: url("../../images/img2.jpg");
+  background-image: url("../images/img2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6091,7 +6091,7 @@ ul {
 .stripped__img {
   height: 400px;
   width: 100%;
-  background-image: url("../../images/img3.jpg");
+  background-image: url("../images/img3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6128,7 +6128,7 @@ ul {
     position: relative;
     height: 400px;
     width: 100%;
-    background-image: url("../../images/img4.jpg");
+    background-image: url("../images/img4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
