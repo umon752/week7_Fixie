@@ -5740,13 +5740,13 @@ a.text-dark:hover, a.text-dark:focus {
     width: 0;
     right: 0; } }
 
-.hover-rotatex-turn-round {
+.hover-rotateX-turn-round {
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   -o-transition: transform 0.7s;
   transition: transform 0.7s;
   transition: transform 0.7s, -webkit-transform 0.7s; }
-  .hover-rotatex-turn-round:hover {
+  .hover-rotateX-turn-round:hover {
     -webkit-transform: rotateX(360deg);
     transform: rotateX(360deg); }
 
@@ -5767,7 +5767,7 @@ a.text-dark:hover, a.text-dark:focus {
     transition: transform 0.2s, -webkit-transform 0.2s; }
 
 @media (min-width: 992px) {
-  .hover-bgdark-lg-left::before {
+  .hover-bgDark-lg-left::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -5785,19 +5785,19 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease; }
-  .hover-bgdark-lg-left:hover::before {
+  .hover-bgDark-lg-left:hover::before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease; }
-  .hover-bgdark-lg-left:hover {
+  .hover-bgDark-lg-left:hover {
     color: white;
     border: #121212; } }
 
 @media (min-width: 992px) {
-  .hover-bglight-lg-left::before {
+  .hover-bgLight-lg-left::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -5815,14 +5815,14 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease; }
-  .hover-bglight-lg-left:hover::before {
+  .hover-bgLight-lg-left:hover::before {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease; }
-  .hover-bglight-lg-left:hover {
+  .hover-bgLight-lg-left:hover {
     color: #121212;
     border: #F1F5F6; } }
 
