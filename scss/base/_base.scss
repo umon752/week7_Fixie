@@ -1,0 +1,19 @@
+/* 全站設定 */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    transition: all 0.3s ease;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

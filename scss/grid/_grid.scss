@@ -1,0 +1,22 @@
+/* RWD斷點(BS4) */
+// phone
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// pad
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+// desktop
+@mixin xl {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+

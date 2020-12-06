@@ -1,0 +1,174 @@
+// collection
+.collection {
+    &__text {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        z-index: 10;
+
+        @include lg {
+            padding-left: 48px;
+            position: static;
+        }
+    }
+
+    &__img {
+        height: 400px;
+        background-image: url("../../images/img1.jpg");
+        @include bg-cover(center);
+
+        @include md {
+            height: 500px;
+        }
+
+        @include xl {
+            height: 864px;
+        }
+    }
+}
+
+
+
+// onegear、stripped
+.onegear,
+.stripped {
+    position: relative;
+
+    @include lg {
+        position: static;
+    }
+}
+
+.onegear__item,
+.stripped__item {
+    padding: 15px !important;
+
+    @include lg {
+        padding: 30px 48px !important;
+    }
+
+    @include xl {
+        padding: 96px 135px !important;
+    }
+}
+
+.onegear__img {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../images/img2.jpg");
+    @include bg-cover(center);
+
+    @include md {
+        height: 500px;
+    }
+
+    @include xl {
+        height: 960px;
+    }
+}
+
+.stripped__img {
+    height: 400px;
+    width: 100%;
+    background-image: url("../../images/img3.jpg");
+    @include bg-cover(center);
+
+    @include md {
+        height: 500px;
+    }
+
+    @include xl {
+        height: 960px;
+    }
+}
+
+// 按鈕
+.arrow__icon {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    right: -61px;
+    top: 50%;
+    z-index: 11;
+}
+
+.readmore__btn {
+    @include lg {
+        width: 150px;
+        height: 61px;
+        position: absolute;
+        left: -150px;
+        top: 50%;
+        z-index: 10;
+    }
+}
+
+
+
+// commuters
+.commuters {
+    margin: 52px 15px;
+
+    @include md {
+        margin: 96px auto;
+    }
+
+    &__banner {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        background-image: url("../../images/img4.jpg");
+        @include bg-cover(top);
+        background-attachment: fixed;
+
+        @include md {
+            height: 640px;
+        }
+    }
+
+    &__banner__text {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+
+        @include md {
+            left: 50px;
+            bottom: 50px;
+        }
+
+        @include lg {
+            left: 255px;
+            bottom: 77px;
+        }
+    }
+}
+
+
+
+// article
+.article {
+    margin: 52px auto;
+
+    @include md {
+        margin: 96px auto;
+    }
+
+    &__item {
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(0.8);
+            transition: transform 0.3s;
+            box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    &__item__img {
+        height: 300px;
+        object-fit: cover;
+
+        @include xl {
+            height: 600px;
+        }
+    }
+}

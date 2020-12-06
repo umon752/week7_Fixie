@@ -1,0 +1,243 @@
+// hover
+.hover-underline-left {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background: $primary;
+        opacity: .8;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        transition: all 0.1s ease;
+    }
+
+    &:hover::before {
+        animation-name: underline-left-before;
+        animation-duration: .5s;
+    }
+
+    &::after {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background: $primary;
+        opacity: .8;
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        transition: all 0.1s ease;
+    }
+
+    &:hover::after {
+        animation-name: underline-left-after;
+        animation-duration: .1s;
+        animation-delay: .3s;
+    }
+}
+
+
+@keyframes underline-left-before {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+    }
+}
+
+@keyframes underline-left-after {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+        bottom: 3px;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+    }
+}
+
+.hover-rotatex-turn-round {
+    transition: transform 0.7s;
+
+    &:hover {
+        transform: rotateX(360deg);
+    }
+}
+
+.hover-skew-right {
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: skew(-10deg) translateX(5px);
+        transition: transform 0.2s;
+    }
+}
+
+.hover-bgdark-lg-left {
+    @include lg {
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $dark;
+            transform: scaleX(0);
+            transform-origin: 100% 50%;
+            transition: all 0.15s ease;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+            transition: all 0.15s ease;
+        }
+
+        &:hover {
+            color: white;
+            border: $dark;
+        }
+    }
+}
+
+.hover-bglight-lg-left {
+    @include lg {
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $light;
+            transform: scaleX(0);
+            transform-origin: 100% 50%;
+            transition: all 0.15s ease;
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+            transition: all 0.15s ease;
+        }
+
+        &:hover {
+            color: $dark;
+            border: $light;
+        }
+    }
+}
+
+
+// font-size
+.font-size-sm {
+    font-size: $font-size-sm;
+}
+
+
+// btn
+.btn-outline-lg-dark {
+    @include lg {
+        color: $dark;
+        background-color: white;
+        border-color: $dark;
+
+        &:hover {
+            color: white;
+            background-color: $dark;
+        }
+    }
+}
+
+.btn-lg-light {
+    @include lg {
+        color: $dark;
+        background-color: $light;
+        border-color: $light;
+    }
+}
+
+
+// $theme-colors
+@mixin theme-colors($grid-breakpoints: null) {
+
+    @each $key,
+    $value in $theme-colors {
+
+        .text#{$grid-breakpoints}-#{$key} {
+            color: $value !important;
+        }
+
+        .bg#{$grid-breakpoints}-#{$key} {
+            background: $value !important;
+        }
+    }
+}
+
+
+// $h1-h6
+@mixin h1-h6($grid-breakpoints: null) {
+
+    @each $key,
+    $value in $h1-h6 {
+
+        .#{$key}#{$grid-breakpoints} {
+            font-size: $value !important;
+        }
+    }
+}
+
+
+// 加上斷點
+@include md {
+    @include theme-colors(-md);
+    @include h1-h6(-md);
+}
+
+@include lg {
+    @include theme-colors(-lg);
+    @include h1-h6(-lg);
+}
+
+@include xl {
+    @include theme-colors(-xl);
+    @include h1-h6(-xl);
+}
+
+
+// js動態增加的效果
+.bg-position-left {
+    position: relative;
+    background-position: left;
+    transition: all 1s ease;
+}
+
+.bg-position-right {
+    position: relative;
+    background-position: right;
+    transition: all 1s ease;
+}
+
+.translate-left {
+    transform: translateX(-110px);
+    transition: all 1s ease;
+}
