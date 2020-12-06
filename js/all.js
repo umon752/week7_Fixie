@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // 螢幕寬度>=1200px時執行
-    if ($(window).width() >= 1200) {
+    if ($(window).width() >= 992) {
 
         $(window).scroll(function () {
             var scrollPos = $(window).scrollTop();
