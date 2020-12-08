@@ -7,8 +7,8 @@
   <title>Fixie</title>
   <link rel="shortcut icon" href="./images/favtion.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -34,26 +34,29 @@
         </li>
         <li class="nav-item ml-lg-5">
           <a class="nav-link h4 font-weight-bold text-center hover-skew-right hover-underline-left pb-1"
-            href="#">contact</a>
+            href="#">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- content -->
-  <section class="row no-gutters position-relative overflow-hidden">
-    <div class="collection__item col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right"
-      data-aos-delay="400">
-      <div class="collection__text">
-        <h2 class="h3 h1-xl text-white text-lg-primary mb-5">Single Speed,<br> Single Life.</h2>
-        <p class="d-none d-md-block text-white text-lg-secondary h4 font-weight-normal mb-5">More recently the “fixie”
-          has become a
-          popular<br>alternative among mainly urban cyclists, offering the<br>advantage of simplicity compared with
-          the standard<br>multi-geared bicycle.</p>
-        <a href="#" class="btn btn-outline-light btn-outline-lg-dark h6 h4-md font-weight-bold mb-0">Shop Now</a>
+  <section>
+    <div class="container overflow-hidden">
+      <div class="row no-gutters collection__text">
+        <div class="col-12 col-lg-8 col-xl-12" data-aos="fade-right" data-aos-delay="400">
+          <h2 class="h3 h1-xl text-white text-lg-primary mb-3 mb-lg-5">Single Speed,<br> Single Life.</h2>
+          <p class="d-none d-md-block text-white text-lg-secondary h4 font-weight-normal mb-5">More recently the
+            “fixie”
+            has become a
+            popular<br>alternative among mainly urban cyclists, offering the<br>advantage of simplicity compared with
+            the standard<br>multi-geared bicycle.</p>
+          <a href="#" class="btn btn-outline-light btn-outline-lg-dark h6 h4-md font-weight-bold mb-0">Shop Now</a>
+        </div>
       </div>
     </div>
-    <div class="col-lg-6 bg-dark" data-aos="fade-left" data-aos-delay="400">
+
+    <div class="col-lg-6 bg-dark ml-auto px-0" data-aos="fade-left" data-aos-delay="400">
       <div class="collection__img" data-aos="fade-left" data-aos-delay="800"></div>
       <nav class="bg-white d-flex align-items-center border-bottom">
         <ul class="pagination justify-content-center justify-content-lg-start mb-0 mr-3 mr-md-5">
@@ -135,12 +138,19 @@
       participants.</p>
   </section>
 
-  <section class="recommend__banner">
-    <div class="recommend__banner__text bg-white p-3">
-      <h4 class="h6 h5-md h4-xl fomt-weight-bold mb-3">“I like to ride. Fixed gear. No brakes.<br>Can’t stop. Don’t want
-        to,
-        either.”</h4>
-      <p class="text-secondary mb-0">Premium Rush (2012)</p>
+  <section class="recommend__banner d-flex align-items-end">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="recommend__banner__text bg-white p-3">
+            <h4 class="h6 h5-md h4-xl fomt-weight-bold mb-3">“I like to ride. Fixed gear. No brakes.<br>Can’t stop.
+              Don’t want
+              to,
+              either.”</h4>
+            <p class="text-secondary mb-0">Premium Rush (2012)</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -193,7 +203,7 @@
         <a class="nav-link font-weight-bold hover-skew-right hover-underline-left pb-0" href="#">Blog</a>
       </li>
       <li class="nav-item pr-5">
-        <a class="nav-link font-weight-bold hover-skew-right hover-underline-left pb-0" href="#">contact</a>
+        <a class="nav-link font-weight-bold hover-skew-right hover-underline-left pb-0" href="#">Contact</a>
       </li>
     </ul>
     <p class="text-secondary font-size-sm mb-0">© 2020 Fixie. All Rights Reserved.</p>
@@ -201,8 +211,6 @@
   </footer>
 
 
-
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({

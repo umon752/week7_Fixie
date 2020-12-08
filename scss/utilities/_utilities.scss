@@ -92,7 +92,7 @@
 }
 
 .hover-bgDark-lg-left {
-    @include lg {
+    @include media-breakpoint-up(lg) {
         &::before {
             content: '';
             position: absolute;
@@ -120,7 +120,7 @@
 }
 
 .hover-bgLight-lg-left {
-    @include lg {
+    @include media-breakpoint-up(lg) {
         &::before {
             content: '';
             position: absolute;
@@ -156,7 +156,7 @@
 
 // btn
 .btn-outline-lg-dark {
-    @include lg {
+    @include media-breakpoint-up(lg) {
         color: $dark;
         background-color: white;
         border-color: $dark;
@@ -169,7 +169,7 @@
 }
 
 .btn-lg-light {
-    @include lg {
+    @include media-breakpoint-up(lg) {
         color: $dark;
         background-color: $light;
         border-color: $light;
@@ -208,17 +208,17 @@
 
 
 // 加上斷點
-@include md {
+@include media-breakpoint-up(md) {
     @include theme-colors(-md);
     @include h1-h6(-md);
 }
 
-@include lg {
+@include media-breakpoint-up(lg) {
     @include theme-colors(-lg);
     @include h1-h6(-lg);
 }
 
-@include xl {
+@include media-breakpoint-up(xl) {
     @include theme-colors(-xl);
     @include h1-h6(-xl);
 }

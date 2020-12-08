@@ -1,6 +1,5 @@
 .logo {
     width: 112px;
     height: 48px;
-    background-image: url("../images/logo-fixie.svg");
-    @include text-hidden;
+    @include text-hidden("../images/logo-fixie.svg");
 }

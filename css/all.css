@@ -1,8 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@1,900&family=Roboto&display=swap");
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather'; }
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -5654,7 +5651,6 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
-/* RWD斷點(BS4) */
 .hover-underline-left {
   position: relative; }
   .hover-underline-left::before {
@@ -5983,6 +5979,9 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1rem !important; } }
 
 /* 全站設定 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather'; }
+
 img {
   display: block;
   max-width: 100%;
@@ -6011,17 +6010,15 @@ ul {
 
 .collection__text {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  top: 150px;
   z-index: 10; }
   @media (min-width: 992px) {
     .collection__text {
-      padding-left: 48px;
-      position: static; } }
+      top: 216px; } }
 
 .collection__img {
-  height: 400px;
   background-image: url("../images/img1.jpg");
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6053,9 +6050,9 @@ ul {
       padding: 96px 135px !important; } }
 
 .onegear__img {
-  height: 400px;
   width: 100%;
   background-image: url("../images/img2.jpg");
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6067,9 +6064,9 @@ ul {
       height: 960px; } }
 
 .stripped__img {
-  height: 400px;
   width: 100%;
   background-image: url("../images/img3.jpg");
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -6105,28 +6102,17 @@ ul {
 
 .recommend__banner {
   position: relative;
-  height: 400px;
   width: 100%;
+  padding-bottom: 77px;
   background-image: url("../images/img4.jpg");
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center 20%;
   background-attachment: fixed; }
   @media (min-width: 768px) {
     .recommend__banner {
       height: 640px; } }
-  .recommend__banner__text {
-    position: absolute;
-    left: 0;
-    bottom: 30px; }
-    @media (min-width: 768px) {
-      .recommend__banner__text {
-        left: 50px;
-        bottom: 50px; } }
-    @media (min-width: 992px) {
-      .recommend__banner__text {
-        left: 255px;
-        bottom: 77px; } }
 
 .article {
   margin: 52px auto; }

@@ -2,26 +2,22 @@
 .collection {
     &__text {
         position: absolute;
-        left: 30px;
-        top: 30px;
+        top: 150px;
         z-index: 10;
 
-        @include lg {
-            padding-left: 48px;
-            position: static;
+        @include media-breakpoint-up(lg) {
+            top: 216px;
         }
     }
 
     &__img {
-        height: 400px;
-        background-image: url("../images/img1.jpg");
-        @include bg-cover(center);
+        @include bg-cover("../images/img1.jpg", 400px, center);
 
-        @include md {
+        @include media-breakpoint-up(md) {
             height: 500px;
         }
 
-        @include xl {
+        @include media-breakpoint-up(xl) {
             height: 864px;
         }
     }
@@ -34,7 +30,7 @@
 .stripped {
     position: relative;
 
-    @include lg {
+    @include media-breakpoint-up(lg) {
         position: static;
     }
 }
@@ -43,41 +39,37 @@
 .stripped__item {
     padding: 15px !important;
 
-    @include lg {
+    @include media-breakpoint-up(lg) {
         padding: 30px 48px !important;
     }
 
-    @include xl {
+    @include media-breakpoint-up(xl) {
         padding: 96px 135px !important;
     }
 }
 
 .onegear__img {
-    height: 400px;
     width: 100%;
-    background-image: url("../images/img2.jpg");
-    @include bg-cover(center);
+    @include bg-cover("../images/img2.jpg", 400px, center);
 
-    @include md {
+    @include media-breakpoint-up(md) {
         height: 500px;
     }
 
-    @include xl {
+    @include media-breakpoint-up(xl) {
         height: 960px;
     }
 }
 
 .stripped__img {
-    height: 400px;
     width: 100%;
-    background-image: url("../images/img3.jpg");
-    @include bg-cover(center);
+    @include bg-cover("../images/img3.jpg", 400px, center);
 
-    @include md {
+    @include media-breakpoint-up(md) {
         height: 500px;
     }
 
-    @include xl {
+    @include media-breakpoint-up(xl) {
         height: 960px;
     }
 }
@@ -93,7 +85,7 @@
 }
 
 .readmore__btn {
-    @include lg {
+    @include media-breakpoint-up(lg) {
         width: 150px;
         height: 61px;
         position: absolute;
@@ -109,7 +101,7 @@
 .commuters {
     margin: 52px 15px;
 
-    @include md {
+    @include media-breakpoint-up(md) {
         margin: 96px auto;
     }
 }
@@ -119,30 +111,13 @@
 // recommend
 .recommend__banner {
     position: relative;
-    height: 400px;
     width: 100%;
-    background-image: url("../images/img4.jpg");
-    @include bg-cover(top);
+    padding-bottom: 77px;
+    @include bg-cover("../images/img4.jpg", 400px, center 20%);
     background-attachment: fixed;
 
-    @include md {
+    @include media-breakpoint-up(md) {
         height: 640px;
-    }
-
-    &__text {
-        position: absolute;
-        left: 0;
-        bottom: 30px;
-
-        @include md {
-            left: 50px;
-            bottom: 50px;
-        }
-
-        @include lg {
-            left: 255px;
-            bottom: 77px;
-        }
     }
 }
 
@@ -152,7 +127,7 @@
 .article {
     margin: 52px auto;
 
-    @include md {
+    @include media-breakpoint-up(md) {
         margin: 96px auto;
     }
 
@@ -170,7 +145,7 @@
         height: 300px;
         object-fit: cover;
 
-        @include xl {
+        @include media-breakpoint-up(xl) {
             height: 600px;
         }
     }
