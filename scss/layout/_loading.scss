@@ -14,7 +14,7 @@
 }
 
 .loading__img {
-    @mixin bg-cover("../images/logo-fixie.svg", 72px, center);
+    @include bg-cover("../images/logo-fixie.svg", 72px, center);
     width: 200px;
     position: relative;
     animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;

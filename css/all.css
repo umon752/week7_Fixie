@@ -5736,16 +5736,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 0;
     right: 0; } }
 
-.hover-rotateX-turn-round {
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  -o-transition: transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s; }
-  .hover-rotateX-turn-round:hover {
-    -webkit-transform: rotateX(360deg);
-    transform: rotateX(360deg); }
-
 .hover-skew-right {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -6029,12 +6019,12 @@ ul {
       animation: MoveRightInitial 0.2s forwards; }
 
 .loading__img {
-  width: 200px;
-  height: 72px;
   background-image: url("../images/logo-fixie.svg");
+  height: 72px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  width: 200px;
   position: relative;
   -webkit-animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
   animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s; }
