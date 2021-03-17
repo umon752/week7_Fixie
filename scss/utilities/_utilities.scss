@@ -176,6 +176,11 @@
     }
 }
 
+// overflow-hidden
+.overflowX-hidden {
+    overflow-x: hidden;
+}
+
 
 // $theme-colors
 @mixin theme-colors($grid-breakpoints: null) {

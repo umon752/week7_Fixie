@@ -5840,6 +5840,9 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #F1F5F6;
     border-color: #F1F5F6; } }
 
+.overflowX-hidden {
+  overflow-x: hidden; }
+
 @media (min-width: 768px) {
   .text-md-primary {
     color: #000000DE !important; }
@@ -6007,6 +6010,115 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   white-space: nowrap; }
+
+.loading {
+  z-index: 1030;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .loading--fadeOut {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); }
+    .loading--fadeOut .loading__img {
+      -webkit-animation: MoveRightInitial 0.2s forwards;
+      animation: MoveRightInitial 0.2s forwards; }
+
+.loading__img {
+  width: 200px;
+  height: 72px;
+  background-image: url("../images/logo-fixie.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  -webkit-animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+  animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s; }
+  .loading__img::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #000000DE;
+    opacity: .8;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    -webkit-animation-name: underline-left-before;
+    animation-name: underline-left-before;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .loading__img::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #000000DE;
+    opacity: .8;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    -webkit-animation-name: underline-left-after;
+    animation-name: underline-left-after;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+
+@-webkit-keyframes MoveRightInitial {
+  to {
+    -webkit-transform: translate3d(105%, 0, 0);
+    transform: translate3d(105%, 0, 0); } }
+
+@keyframes MoveRightInitial {
+  to {
+    -webkit-transform: translate3d(105%, 0, 0);
+    transform: translate3d(105%, 0, 0); } }
+
+@-webkit-keyframes MoveRightEnd {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes MoveRightEnd {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes underline-left-before {
+  0% {
+    width: 0;
+    left: 0; }
+  50% {
+    width: 100%;
+    right: 0; }
+  100% {
+    width: 0;
+    right: 0; } }
+
+@keyframes underline-left-after {
+  0% {
+    width: 0;
+    left: 0; }
+  50% {
+    width: 100%;
+    right: 0;
+    bottom: 3px; }
+  100% {
+    width: 0;
+    right: 0; } }
 
 .collection__text {
   position: absolute;

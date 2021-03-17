@@ -1,0 +1,101 @@
+.loading {
+    z-index: 1030;
+    transition: all 0.5s ease;
+
+    &--fadeOut {
+        transition: all 0.5s ease;
+        opacity: 0;
+        transform: translateX(100%);
+
+        .loading__img {
+            animation: MoveRightInitial 0.2s forwards;
+        }
+    }
+}
+
+.loading__img {
+    @mixin bg-cover("../images/logo-fixie.svg", 72px, center);
+    width: 200px;
+    position: relative;
+    animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+
+    &::before {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background: $primary;
+        opacity: .8;
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+        animation-name: underline-left-before;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+    }
+
+    &::after {
+        content: '';
+        width: 0%;
+        height: 1px;
+        background: $primary;
+        opacity: .8;
+        position: absolute;
+        bottom: 0px;
+        right: 5px;
+        animation-name: underline-left-after;
+        animation-duration: .1s;
+        animation-delay: .3s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes MoveRightInitial {
+    to {
+        transform: translate3d(105%, 0, 0);
+    }
+}
+
+@keyframes MoveRightEnd {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes underline-left-before {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+    }
+}
+
+@keyframes underline-left-after {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        right: 0;
+        bottom: 3px;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+    }
+}

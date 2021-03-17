@@ -11,7 +11,15 @@
   <link rel="stylesheet" href="./css/all.css">
 </head>
 
-<body>
+<body class="overflowX-hidden">
+  <!-- loading -->
+  <div class="loading bg-white vw-100 vh-100 fixed-top d-flex align-items-center justify-content-center">
+    <div class="overflow-hidden pb-2">
+      <div class="loading__img hover-skew-right hover-underline-left mb-3"></div>
+      <p class="loading__text h3 text-center font-weight-bold"></p>
+    </div>
+  </div>
+
   <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top px-md-5 py-md-4"
     data-aos="fade-down">
@@ -41,7 +49,7 @@
   </nav>
 
   <!-- content -->
-  <section>
+  <section class="overflow-hidden">
     <div class="container overflow-hidden">
       <div class="row no-gutters collection__text">
         <div class="col-12 col-lg-8 col-xl-12" data-aos="fade-right" data-aos-delay="400">
@@ -212,12 +220,6 @@
 
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 300,
-      once: true
-    });
-  </script>
   <script src="./js/vendors/jquery-3.5.1.slim.min.js"></script>
   <script src="./js/vendors/bootstrap.min.js"></script>
   <script src="./js/all.js"></script>
