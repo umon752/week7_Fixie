@@ -6020,14 +6020,18 @@ ul {
 
 .loading__img {
   background-image: url("../images/logo-fixie.svg");
-  height: 72px;
+  height: 32px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 200px;
+  width: 100px;
   position: relative;
   -webkit-animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
   animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s; }
+  @media (min-width: 768px) {
+    .loading__img {
+      height: 72px;
+      width: 200px; } }
   .loading__img::before {
     content: '';
     width: 0%;

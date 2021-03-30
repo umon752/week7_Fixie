@@ -14,10 +14,15 @@
 }
 
 .loading__img {
-    @include bg-cover("../images/logo-fixie.svg", 72px, center);
-    width: 200px;
+    @include bg-cover("../images/logo-fixie.svg", 32px, center);
+    width: 100px;
     position: relative;
     animation: MoveRightInitial 0.1s forwards, MoveRightEnd 0.3s forwards 0.2s;
+
+    @include media-breakpoint-up(md) {
+        height: 72px;
+        width: 200px;
+    }
 
     &::before {
         content: '';
