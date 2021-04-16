@@ -1,4 +1,4 @@
-$(window).ready(function () {
+$(window).on('load', function () {
     let progress = 0;
     let timer = setInterval(loadProgress, 10);
 
